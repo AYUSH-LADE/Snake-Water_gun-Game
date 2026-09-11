@@ -87,7 +87,7 @@ Gun → beats Snake
 ### 1. Clone the repository
 
 ```bash
-git clone <YOUR_REPOSITORY_URL>
+git clone https://github.com/AYUSH-LADE/Snake-Water_gun-Game.git
 cd Snake-Water_gun-Game-main
 ```
 

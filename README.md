@@ -1,129 +1,68 @@
-# 🐍💧🔫 Snake • Water • Gun
+<div align="center">
 
-### A simple Python CLI game where you challenge the computer.
+# 🐍 SNAKE • WATER • GUN 🔫
 
-**Choose wisely. Outsmart the computer. 🧠**
+### The classic hand-game, reborn in your terminal.
 
-<p align="center">
-  <b>🐍 Snake</b> &nbsp; • &nbsp;
-  <b>💧 Water</b> &nbsp; • &nbsp;
-  <b>🔫 Gun</b>
-</p>
+[![Python](https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![Status](https://img.shields.io/badge/Status-Active-brightgreen?style=for-the-badge)](.)
+[![Made with](https://img.shields.io/badge/Made%20with-%E2%9D%A4%EF%B8%8F-red?style=for-the-badge)](.)
+
+*No GUI. No fluff. Just pure logic, pure randomness, pure vibes.* ⚡
+
+</div>
 
 ---
 
-## 🎮 About The Game
+## 💥 What Is This?
 
-**Snake • Water • Gun** is a fun command-line game built with **Python**.
+A zero-dependency, single-file Python game where **you** go head-to-head against the computer using three simple weapons — Snake, Water, and Gun. It's Rock-Paper-Scissors' cooler cousin.
 
-You choose one of three options:
-
-```text
-🐍 Snake
-💧 Water
-🔫 Gun
+```
+🐍  Snake drinks the Water
+💧  Water short-circuits the Gun
+🔫  Gun kills the Snake
 ```
 
-The computer randomly selects its choice, and the winner is decided according to the game rules.
-
-No fancy UI.
-No unnecessary libraries.
-Just **Python + logic + randomness.** ⚡
+Simple rules. Instant chaos. One `python` command away.
 
 ---
 
-## 🧠 Game Rules
+## ⚔️ Battle Rules
 
-| Your Choice | Opponent    | Result        |
-| ----------- | ----------- | ------------- |
-| 🐍 Snake    | 💧 Water    | 🏆 Snake wins |
-| 💧 Water    | 🔫 Gun      | 🏆 Water wins |
-| 🔫 Gun      | 🐍 Snake    | 🏆 Gun wins   |
-| Same choice | Same choice | 🤝 Draw       |
+<div align="center">
 
-### The Logic
+| You Pick | Beats  | Result        |
+|:--------:|:------:|:-------------:|
+| 🐍 Snake | 💧 Water | 🏆 **You win!** |
+| 💧 Water | 🔫 Gun   | 🏆 **You win!** |
+| 🔫 Gun   | 🐍 Snake | 🏆 **You win!** |
+|  Same    |  Same  | 🤝 **Draw**     |
 
-```text
-Snake → beats Water
-Water → beats Gun
-Gun → beats Snake
-```
+</div>
 
 ---
 
-## ✨ Features
+## 🚀 Quick Start
 
-* 🎯 Simple command-line interface
-* 🎲 Random computer moves
-* 🧠 Rule-based game logic
-* ✅ Input validation
-* 🏆 Win / Lose / Draw detection
-* 🐍 Beginner-friendly Python code
-* ⚡ No external dependencies
-
----
-
-## 🛠️ Tech Stack
-
-**Language**
-
-🐍 Python 3
-
-**Python Concepts Used**
-
-* `random` module
-* Dictionaries
-* Conditional statements
-* User input
-* Variables
-* Boolean logic
-* `if / elif / else`
-* Formatted strings
-
----
-
-## 🚀 Getting Started
-
-### 1. Clone the repository
+**1. Clone it**
 
 ```bash
 git clone https://github.com/AYUSH-LADE/Snake-Water_gun-Game.git
 cd Snake-Water_gun-Game-main
 ```
 
-### 2. Run the game
+**2. Run it**
 
 ```bash
 python project.py
 ```
 
-On some systems:
-
-```bash
-python3 project.py
-```
+That's it. No `pip install`, no config, no setup wizard. Just Python doing what Python does.
 
 ---
 
 ## 🕹️ How To Play
-
-When the game starts, you'll see:
-
-```text
-Enter your choice (s = Snake, w = Water, g = Gun):
-```
-
-Enter one of:
-
-```text
-s → 🐍 Snake
-w → 💧 Water
-g → 🔫 Gun
-```
-
-The computer will randomly select its move.
-
-Example:
 
 ```text
 Enter your choice (s = Snake, w = Water, g = Gun): g
@@ -133,93 +72,49 @@ Computer chose Snake
 You won! :)
 ```
 
-🔥 **GG!**
+| Key | Weapon    |
+|:---:|:---------:|
+| `s` | 🐍 Snake  |
+| `w` | 💧 Water  |
+| `g` | 🔫 Gun    |
 
 ---
 
-## 🧩 Project Structure
+## 🧠 Under The Hood
 
-```text
-Snake-Water_gun-Game-main/
-│
-├── project.py
-└── README.md
+Built entirely with core Python — no external libraries, no dependencies, just clean fundamentals:
+
+- `random.choice()` for the computer's move
+- Dictionaries for choice-mapping in both directions
+- `if / elif / else` chains for win/lose/draw logic
+- Basic input validation to catch invalid entries
+
+```
+project.py
+└── Snake-Water_gun-Game-main/
 ```
 
 ---
 
-## 💡 What I Learned
+## 🔮 Roadmap
 
-This project helped me practice fundamental Python programming concepts, including:
-
-```text
-User Input
-    ↓
-Input Validation
-    ↓
-Dictionary Mapping
-    ↓
-Random Computer Choice
-    ↓
-Game Logic
-    ↓
-Result
-```
-
-It is a small project, but it demonstrates how basic programming concepts can be combined to create an interactive application.
+- [ ] Best-of-N rounds with running score
+- [ ] Play-again loop
+- [ ] Difficulty / AI bias modes
+- [ ] Colorized terminal output
+- [ ] Win/loss stats tracking
 
 ---
 
-## 🔮 Future Improvements
-
-The current version is intentionally simple. Possible upgrades:
-
-* 🔄 Add multiple rounds
-* 📊 Add a score system
-* 🏆 Show final winner
-* 🔁 Add "Play Again" functionality
-* 🎨 Improve terminal UI
-* 🤖 Add difficulty levels
-* 📈 Track win/loss statistics
-* 🧪 Add automated tests
-
----
-
-## 📸 Demo
-
-```text
-╔══════════════════════════════════╗
-║      🐍 SNAKE • WATER • GUN 💧   ║
-╚══════════════════════════════════╝
-
-Enter your choice (s = Snake, w = Water, g = Gun): s
-
-You chose Snake
-Computer chose Gun
-
-You lose! :(
-```
-
----
+<div align="center">
 
 ## 👨‍💻 Author
 
-### Ayush Lade
+**Ayush Lade**
+Computing Engineering Student · Builder
 
-Engineering Student | Programmer | Builder
+*Learning by building, one project at a time.* 🚀
 
-Learning by building, one project at a time. 🚀
+### ⭐ If you enjoyed this, drop a star — it costs nothing and means everything.
 
----
-
-## ⭐ Support
-
-If you like this project, consider giving the repository a ⭐.
-
-Every project starts small.
-
-**This one started with three choices:**
-
-> 🐍 Snake. 💧 Water. 🔫 Gun.
-
-### Built with Python 🐍
+</div>
